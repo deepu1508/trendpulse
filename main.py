@@ -10,6 +10,9 @@ from kivymd.uix.datatables import MDDataTable
 from database import DataBase
 from database1 import DataBase1
 from database1 import DataBase2
+import certifi
+import os
+os.environ["SSL_CERT_FILE"]=certifi.where()
 
 
 class CreateAccountWindow(Screen):
